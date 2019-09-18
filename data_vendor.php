@@ -134,15 +134,17 @@ switch($view){
 									<option value="D2">Distrik II</option>
 									<option value="D3">Distrik III</option>
 									<option value="D4">Distrik IV</option>
-									<optio
 									</select>
 								</div>
-							</td>
-						
-							
-							
-							
-							
+							</td>	
+						</tr>
+						<tr>
+							<td>Keterangan Berlaku</td>
+							<td>
+								<div class="col-md-4">
+								<textarea class="form-control" type="text" name="ket_berlaku" required /> </textarea>
+								</div>
+							</td>	
 						</tr>
 						<tr>
 							<td></td>

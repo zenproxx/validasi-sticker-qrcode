@@ -55,7 +55,7 @@ if(isset($_SESSION['login'])){
 		</tr>
 		
 		<tr>
-			<td colspan="3"><h2 class="text-center">BERLAKU SAMPAI DENGAN DESEMBER 2019</h2></td>
+			<td colspan="3"><h2 class="text-center"><?php echo $d['ket_berlaku']; ?></h2></td>
 		</tr>
 	</table>
 	

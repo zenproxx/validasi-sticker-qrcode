@@ -17,13 +17,14 @@ if(isset($_GET['act'])){
 		$tgl	= $_POST['tgllulus'];
 		$noijazah = $_POST['noijazah'];
 		$ipk	= $_POST['ipk'];
+		$ket_berlaku	= $_POST['ket_berlaku'];
 		
 		if($npm=='' || $nama=='' || $prodi=='' || $tgl=='' || $noijazah=='' || $ipk==''){
 			header('location:data_mahasiswa.php?view=tambah');
 		}else{			
 			//proses simpan data admin
 			$simpan = mysqli_query($konek, "INSERT INTO mahasiswa(npm,nama_mhs,prodi,tgl_lulus,no_ijazah,ipk) 
-							VALUES ('$npm','$nama','$prodi','$tgl','$noijazah','$ipk')");
+							VALUES ('$npm','$nama','$prodi','$tgl','$noijazah','$ipk','$ket_berlaku')");
 			
 			if($simpan){
 				// BUAT QRCODE
